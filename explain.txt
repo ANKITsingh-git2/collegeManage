@@ -1,0 +1,73 @@
+ 1. React.js (Main frontend framework)
+Shown in /frontend/package.jsonUsed for building the user interface components
+
+2.Redux (State management)
+Files: /frontend/src/redux/
+Used for managing application state like user data and login inf
+
+3. Tailwind CSS (Styling)
+Configuration in /frontend/tailwind.config.jsUsed for styling components and responsive design
+
+4.Axios (HTTP client)
+Used throughout for API calls to backendExample in /frontend/src/Screens/Admin/Profile.jsx
+
+
+Backend (/backend/):
+1.Node.js & Express.js
+Main server framework shown in /backend/index.js
+Handling routes and API endpoints
+
+2. MongoDB with Mongoose
+Database and ODM shown in /backend/Database/db.jsModels in /backend/models/ for data schemas
+
+3, Multer
+Middleware for handling file uploadsUsed in /backend/routes/Faculty Api/details.route.js
+
+4. JWT (JSON Web Tokens)
+Listed in /backend/package.jsonUsed for authentication
+
+
+Dev tools:
+1.Nodemon
+Listed in /backend/package.jsonUsed for development server auto-reload
+
+2.Cors
+Configured in /backend/index.jsHandling cross-origin requests between frontend and backend
+
+
+
+
+
+******************* data structures used************
+  1. MongoDB Schemas/Models
+// adminDetails.model.js
+const adminDetails = new mongoose.Schema({
+  employeeId: Number,
+  firstName: String,
+  middleName: String,
+  lastName: String,
+  email: String,
+  phoneNumber: Number,
+  gender: String,
+  profile: String
+});
+
+// adminCredential.model.js
+const adminCredential = new mongoose.Schema({
+  loginid: Number,
+  password: String
+});
+
+
+2. Student Models (in /backend/models/Students/details.model.js)
+
+3 Form Data:
+Used for file uploads and multipart requests:
+mple from /frontend/src/Screens/Admin/Admin/AddAdmin.jsx
+
+4. Redux Store Structure:
+Defined in /frontend/src/redux/reducers.js:
+
+5.React State Objects:
+Used in frontend components for managing local state:
+frontend/src/Screens/Admin/Branch.jsx
